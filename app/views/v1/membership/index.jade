@@ -1,0 +1,21 @@
+extends layout
+block content
+	.container
+		if error
+			span.label.label-important error
+
+		h1 Member List
+		.contaier.span9
+			.row
+				table.table.table-bordered.table-hover
+					for item in items
+						tr
+							td.span2
+								h2 #{item.memberid}
+							td.span4
+								h2 #{item.memberfname}
+							td.span4
+								h2 #{item.memberlname}
+			.row
+				h2
+					a(href="/v1/membership/new") Add Member

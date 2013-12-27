@@ -1,0 +1,38 @@
+{
+  "name": "app-name",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "locomotive": "0.3.x",
+    "express": "3.x.x",
+    "connect-powered-by": "0.1.x",
+    "jade": "*",
+    "dirty": "*",
+    "glob": "*",
+    "nconf": "*",
+    "winston": "*",
+    "tedious": "*",
+    "moment": "*",
+    "tedious-connection-pool": "*",
+    "emailjs":"*",
+    "node-uuid": "*",
+    "amqp":"*",
+    "crypto":"*",
+    "twilio":"*",
+    "sugar":"*",
+    "js2xmlparser":"*",
+    "xmlhttprequest":"*"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development node server.js --listen_port 4000",
+    "production": "NODE_ENV=development node server.js",
+    "test": "mocha --timeout 30000 --reporter nyan test/**/*.js"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "supertest":"*",
+    "cheerio": "*"
+  }
+}

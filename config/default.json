@@ -1,0 +1,22 @@
+{
+	"server_name": "localhost",
+	"listen_port": "5000",
+	"gzip": false,
+	"cache-control": false,
+	"cookie_key": "",
+	"allow_cross_domain": true,
+	"public_folder": true,
+	"cluster_workers": "max",
+	"file_logger": true,
+	"db_name": "LogDB",
+	"db_server": "216.34.250.67",
+	"db_username": "sa",
+	"db_password": "Passw0rd3",
+    "db_pool_min": 0,
+    "db_pool_max": 50,
+    "db_pool_idle_timeout": 30000,
+    "db_logger" : false,
+    "basic_auth": false,
+    "basic_auth_username": "admin",
+    "basic_auth_password": "F0nch3rt0"     
+}

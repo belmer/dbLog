@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	div.container
+		h1 Add Member
+		form(method="post", action="/v1/membership")
+			input.input-large(type="text",name="MemberFName", placeholder="First Name")
+			br
+			input.input-large(type="text",name="MemberLName", placeholder="Last Name")
+			br
+			button.btn(type="submit") Add
+		a(href="/v1/todo") Go Back
