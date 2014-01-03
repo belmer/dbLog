@@ -55,7 +55,7 @@ LogModel.insertLog = function(logData, callback) {
     var sqlreq = new sqlReq("usp_BeatSessionLog_Insert", responseCallback(responseData, processLog));
     sqlreq.addParameter('beatsession_guid', sqlTypes.VarChar, logData.beatsession_guid)
     sqlreq.addParameter('message', sqlTypes.VarChar, logData.message);
-    sqlreq.addParameter('event', sqlTypes.VarChar, logData.event);
+    sqlreq.addParameter('event', sqlTypes.VarChar, logData.event_name);
     sqlConn.callProcedure(sqlreq);
     sqlreq.on("doneProc", function(rowCount, more, returnStatus, rows) {
         responseData.push(returnStatus);
