@@ -1,5 +1,5 @@
 {
-	"server_name": "api.live.drumbi.com",
+	"server_name": "api.lax.grumla.com",
 	"listen_port": "6000",
 	"gzip": true,
 	"cache-control": false,
@@ -8,7 +8,7 @@
 	"public_folder": true,
 	"cluster_workers": "max",
 	"cluster_workers": "max" ,
-    "db_name": "LogDB",
+    "db_name": "LogDBV4",
 	"db_server": "sql001.oc2.grumla.com",
 	"db_username": "sa",
 	"db_password": "Passw0rd3",
