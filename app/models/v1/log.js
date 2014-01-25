@@ -56,8 +56,8 @@ LogModel.insertLog = function(logData, callback) {
     sqlreq.addParameter('beatsession_guid', sqlTypes.VarChar, logData.beatsession_guid)
     sqlreq.addParameter('message', sqlTypes.VarChar, logData.message);
     sqlreq.addParameter('event', sqlTypes.VarChar, logData.event_name);
-    sqlreq.addParameter('origin', sqlTypes.VarChar, logData.event_name);
-    sqlreq.addParameter('data_id', sqlTypes.VarChar, logData.event_name);
+    sqlreq.addParameter('origin', sqlTypes.VarChar, logData.event_origin);
+    sqlreq.addParameter('data_id', sqlTypes.VarChar, logData.event_dataid);
     sqlConn.callProcedure(sqlreq);
     sqlreq.on("doneProc", function(rowCount, more, returnStatus, rows) {
         responseData.push(returnStatus);
